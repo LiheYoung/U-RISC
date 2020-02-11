@@ -30,10 +30,10 @@ ResNet-152: [Download](https://hangzh.s3.amazonaws.com/encoding/models/resnet152
 ## Training
 
 ### Simple Track
-> CUDA\_VISIBLE\_DEVICES=0,1,2,3 python train.py --dataset simple --batch-size 4 --epochs 200 --lr 0.0014 --backbone resnet50 --model DFF --alpha 0.7 --crop-size 960 --aug --k 1
+> CUDA\_VISIBLE\_DEVICES=0,1,2,3 python train.py --dataset simple --aug --k 1
 
 ### Complex Track
-> CUDA\_VISIBLE\_DEVICES=0,1,2,3 python train.py --dataset complex --batch-size 4 --epochs 45 --lr 0.0014 --backbone resnet152 --model CASENet --alpha 0.70 --crop-size 1280 --aug --kernel-size 9 --edge-weight 0.4
+> CUDA\_VISIBLE\_DEVICES=0,1,2,3 python train.py --dataset complex --aug --kernel-size 9 --edge-weight 0.4
 
 
 ## Testing and Ensembing
