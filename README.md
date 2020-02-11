@@ -38,7 +38,7 @@ ResNet-152: [Download](https://hangzh.s3.amazonaws.com/encoding/models/resnet152
 > CUDA\_VISIBLE\_DEVICES=0,1,2,3 python train.py --dataset complex --aug --kernel-size 9 --edge-weight 0.4
 
 
-### Testing and Ensembing
+### Testing and Ensembling
 #### Simple Track
 > CUDA\_VISIBLE\_DEVICES=0 python test.py --dataset simple --model DFF --backbone resnet50
 
