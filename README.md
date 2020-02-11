@@ -1,4 +1,6 @@
-# U-RISC COMPETITION
+# U-RISC
+
+[Ultra-high Resolution EM Images Segmentation Challenge](https://www.biendata.com/competition/urisc/)
 
 ## Environment
 ### Hardware
