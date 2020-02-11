@@ -4,7 +4,7 @@ import os
 
 class Options:
     def __init__(self):
-        parser = argparse.ArgumentParser("U-RISC COMPETITION")
+        parser = argparse.ArgumentParser("Ultra-high Resolution EM Images Segmentation Challenge")
         parser.add_argument("--dataset", type=str, default="simple",
                             help="training dataset: simple(default) or complex")
         parser.add_argument("--model", type=str)
