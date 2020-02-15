@@ -33,12 +33,12 @@ ResNet-152: [Download](https://hangzh.s3.amazonaws.com/encoding/models/resnet152
 
 #### Simple Track
 ```bash
-CUDA_VISIBLE_DEVICES=0,1,2,3 python train.py --dataset simple --model DFF --backbone resnet50 --lr 0.0014 --epochs 200 --crop-size 960 --aug --k 1
+CUDA_VISIBLE_DEVICES=0,1,2,3 python train.py --dataset simple --model DFF --backbone resnet50 --batch-size 4 --lr 0.0014 --epochs 200 --crop-size 960 --aug --k 1
 ```
 
 #### Complex Track
 ```bash
-CUDA_VISIBLE_DEVICES=0,1,2,3 python train.py --dataset complex --model CASENet --backbone resnet152 --lr 0.0014 --epochs 45 --crop-size 1280 --aug --kernel-size 9 --edge-weight 0.4
+CUDA_VISIBLE_DEVICES=0,1,2,3 python train.py --dataset complex --model CASENet --backbone resnet152 --batch-size 4 --lr 0.0014 --epochs 45 --crop-size 1280 --aug --kernel-size 9 --edge-weight 0.4
 ```
 
 ### Testing and Ensembling
