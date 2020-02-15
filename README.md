@@ -33,20 +33,20 @@ ResNet-152: [Download](https://hangzh.s3.amazonaws.com/encoding/models/resnet152
 
 #### Simple Track
 ```bash
-CUDA\_VISIBLE\_DEVICES=0,1,2,3 python train.py --dataset simple --aug --k 1
+CUDA_VISIBLE_DEVICES=0,1,2,3 python train.py --dataset simple --aug --k 1
 ```
 
 #### Complex Track
 ```bash
-CUDA\_VISIBLE\_DEVICES=0,1,2,3 python train.py --dataset complex --aug --kernel-size 9 --edge-weight 0.4
+CUDA_VISIBLE_DEVICES=0,1,2,3 python train.py --dataset complex --aug --kernel-size 9 --edge-weight 0.4
 ```
 
 ### Testing and Ensembling
 #### Simple Track
 ```bash
-CUDA\_VISIBLE\_DEVICES=0 python test.py --dataset simple --model DFF --backbone resnet50
+CUDA_VISIBLE_DEVICES=0 python test.py --dataset simple --model DFF --backbone resnet50
 ```
 #### Complex Track
 ```bash
-CUDA\_VISIBLE\_DEVICES=0 python test.py --dataset complex --model CASENet --backbone resnet152
+CUDA_VISIBLE_DEVICES=0 python test.py --dataset complex --model CASENet --backbone resnet152
 ```
