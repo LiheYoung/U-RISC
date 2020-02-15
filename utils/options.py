@@ -7,11 +7,11 @@ class Options:
         parser = argparse.ArgumentParser("Ultra-high Resolution EM Images Segmentation Challenge")
         parser.add_argument("--dataset", type=str, default="simple",
                             help="training dataset: simple(default) or complex")
-        parser.add_argument("--model", type=str)
+        parser.add_argument("--model", type=str, default="CASENet")
         parser.add_argument("--batch-size", type=int, default=4,
                             help="batch size for training (default: 4)")
-        parser.add_argument("--epochs", type=int)
-        parser.add_argument("--backbone", type=str)
+        parser.add_argument("--epochs", type=int, default=40)
+        parser.add_argument("--backbone", type=str, default="resnet50")
         parser.add_argument("--lr", type=float, default=0.0014,
                             help="learning rate (default: 0.0014)")
         parser.add_argument("--alpha", type=float, default=0.70,
@@ -20,7 +20,7 @@ class Options:
                             help="learning rate of head over backbone (default: 10)")
         parser.add_argument("--aug", dest="augmentation", action="store_true",
                             help="augment training samples")
-        parser.add_argument("--crop-size", type=int)
+        parser.add_argument("--crop-size", type=int, default=960)
         parser.add_argument("--eval-train", dest="eval_train", action="store_true",
                             help="evaluating model on training set")
         parser.add_argument("--split-size", type=int, default=4000,
@@ -35,26 +35,6 @@ class Options:
 
     def parse(self):
         args = self.parser.parse_args()
-
-        if args.dataset == "simple":
-            if args.epochs is None:
-                args.epochs = 200
-            if args.backbone is None:
-                args.backbone = "resnet50"
-            if args.crop_size is None:
-                args.crop_size = 960
-            if args.model is None:
-                args.model = "DFF"
-        elif args.dataset == "complex":
-            if args.epochs is None:
-                args.epochs = 45
-            if args.backbone is None:
-                args.backbone = "resnet152"
-            if args.crop_size is None:
-                args.crop_size = 1280
-            if args.model is None:
-                args.model = "CASENet"
-
         if args.dataset == "simple":
             path = "data/datasets/simple/val"
             filenames = os.listdir(path)
