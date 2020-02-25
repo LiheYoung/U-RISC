@@ -2,7 +2,7 @@
 
 #### [Final Rank](https://www.biendata.com/competition/urisc/winners): 2nd in simple track, 5th in complex track
 
-### Environment
+## Environment
 #### Hardware
 
 - 4x Tesla V100 (GPU Memory 32GB each)
@@ -13,7 +13,7 @@
 pip install -r requirements.txt
 ```
 
-### Data
+## Data
 Processed data can be downloaded [here](https://pan.baidu.com/s/1LrP56-fstinTh3cNUtTRKg). Put it in top-level folder.
 
 ### Model
@@ -29,7 +29,7 @@ ResNet-152: [Download](https://hangzh.s3.amazonaws.com/encoding/models/resnet152
 [CASENet](https://arxiv.org/abs/1705.09759), backbone ResNet-152
 
 
-### Training
+## Training
 
 #### Simple Track
 ```bash
@@ -41,7 +41,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python train.py --dataset simple --model DFF --back
 CUDA_VISIBLE_DEVICES=0,1,2,3 python train.py --dataset complex --model CASENet --backbone resnet152 --batch-size 4 --lr 0.0014 --epochs 45 --crop-size 1280 --aug --kernel-size 9 --edge-weight 0.4
 ```
 
-### Testing and Ensembling
+## Testing and Ensembling
 #### Simple Track
 ```bash
 CUDA_VISIBLE_DEVICES=0 python test.py --dataset simple --model DFF --backbone resnet50
