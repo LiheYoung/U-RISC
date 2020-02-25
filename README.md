@@ -16,7 +16,7 @@ pip install -r requirements.txt
 ## Data
 Processed data can be downloaded [here](https://pan.baidu.com/s/1LrP56-fstinTh3cNUtTRKg). Put it in top-level folder.
 
-### Model
+## Model
 #### Pretrained Model:
 ResNet-50: [Download](https://hangzh.s3.amazonaws.com/encoding/models/resnet50-25c4b509.zip), 
 ResNet-101: [Download](https://hangzh.s3.amazonaws.com/encoding/models/resnet101-2a57e44d.zip),
