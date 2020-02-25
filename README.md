@@ -5,7 +5,7 @@
 ## Environment
 #### Hardware
 
-- 4x Tesla V100 (GPU Memory 32GB each)
+- 4 NVIDIA Tesla V100 GPUs (32GB memory each)
 - CPU Memory 250GB
 
 #### Packages
