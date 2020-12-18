@@ -1,4 +1,4 @@
-# Ultra-high Resolution EM Images Segmentation Challenge
+## Ultra-high Resolution EM Images Segmentation Challenge
 
 ## Environment
 #### Hardware
