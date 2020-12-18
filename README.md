@@ -1,6 +1,4 @@
-## [Ultra-high Resolution EM Images Segmentation Challenge](https://www.biendata.com/competition/urisc/)
-
-#### [Final Rank](https://www.biendata.com/competition/urisc/winners): 2nd in simple track, 5th in complex track
+# Ultra-high Resolution EM Images Segmentation Challenge
 
 ## Environment
 #### Hardware
