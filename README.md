@@ -1,6 +1,6 @@
 ## Ultra-high Resolution EM Images Segmentation Challenge
 
-**2nd place in the Ultra-high Resolution EM Images Segmentation [Challenge](https://www.biendata.com/competition/urisc) hosted by [BAAI](https://www.baai.ac.cn/) and [PKU](http://english.pku.edu.cn/)**
+**2nd place in the Ultra-high Resolution EM Images Segmentation [Challenge](https://www.biendata.xyz/competition/urisc/) hosted by [BAAI](https://www.baai.ac.cn/) and [PKU](http://english.pku.edu.cn/)**
 
 ## Environment
 #### Hardware
